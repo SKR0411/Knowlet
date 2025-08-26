@@ -1,0 +1,219 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  background: #0b0f19;
+  color: #e6e6e6;
+  margin: 0;
+  padding: 0px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(90deg, #141e30, #243b55);
+  box-shadow: 0 3px 15px rgba(0,0,0,0.5);
+  animation: fadeInDown 1s ease;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: #00d4ff;
+}
+
+header p {
+  opacity: 0.8;
+  font-size: 1rem;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+#semesters {
+  margin: 20px;
+}
+
+/* Card Style */
+.card {
+  background: #1b2230;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid #2d3b50;
+}
+.card:hover {
+  background: #253349;
+  transform: scale(1.05);
+}
+
+.note-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(8px);
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 1s ease;
+}
+
+.note-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+.note-card h3 {
+  color: #00d4ff;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+
+/* Fullscreen Popup */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 15, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+#popup-title {
+  font-size: 2rem;
+}
+.hidden {
+  display: none;
+}
+.popup-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+.popup-content {
+  text-align: center;
+  background: #141a24;
+  border-radius: 16px;
+  padding: 30px;
+  width: 90%;
+  height: 85%;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #ff5757;
+}
+.close:hover {
+  color: #ff1c1c;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  background: #0077ff;
+  color: white;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #3399ff;
+}
+
+.btn-download {
+  background: #00b56a;
+}
+.btn-download:hover {
+  background: #00e68a;
+}
+
+}
+.image-container {
+  width: 100%;
+  max-width: 600px; /* optional: limits width */
+  margin: auto;
+  overflow-y: auto;
+}
+.image-container img {
+  width: 100%;   /* fits to screen width */
+  height: auto;  /* keeps aspect ratio */
+  display: block;
+}
+
+/* Fullscreen Image Popup */
+#img-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(5, 5, 10, 1);
+  display: none;
+  justify-content: center;   /* center horizontally */
+  align-items: flex-start;   /* 👈 stick to top */
+  z-index: 1000;
+  overflow-y: auto;          /* allow scrolling */
+  box-sizing: border-box;
+}
+
+#img-popup .img-popup-body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#img-popup img {
+  max-width: 100%;     /* responsive */
+  height: auto;        /* keep aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+#img-popup .img-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+}
+
+#img-popup h2 {
+  color: #00d4ff;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+}

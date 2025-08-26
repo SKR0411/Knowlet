@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="MyH_ZXmYfE8D3u5iHa7tODNYysPhybxM7dWcc5i3nSI" />
+  <meta name="description" content="Download free BSc 1st semester notes, PDF study materials, and resources for Mathematics, Physics, Computer Science, and more.">
+  <meta name="keywords" content="BSc notes, BSc study materials, BSc 1st semester PDF, mathematics notes, physics notes">
+  <title>Konwlet – Notes & Resources for BSc Students</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Notes For BSc Students</h1>
+    <p>Search, filter, view, and download your study materials</p>
+  </header>
+  
+  <div id="semesters" class="grid"></div>
+
+  <!-- Popup -->
+  <div id="popup" class="popup hidden">
+    <div id="popup-content" class="popup-content">
+      <span id="closeBtn" class="close">&times;</span>
+      <h2 id="popup-title"></h2>
+      <div id="popup-body" class="popup-body"></div>
+    </div>
+  </div>
+
+  <!-- Fullscreen Image Popup -->
+<div id="img-popup" class="popup hidden">
+  <span id="img-close" class="close">&times;</span>
+  <div class="img-popup-body">
+    <div class="img-wrapper">
+      <h2 id="img-title"></h2>   <!-- 👈 heading goes here -->
+      <img id="popup-image" src="" alt="Unit Image">
+    </div>
+  </div>
+</div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
