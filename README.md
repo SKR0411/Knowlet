@@ -10,5 +10,3 @@ Welcome to **Knowlet** – a platform designed to help users easily access and o
 - ☁ **Cloud Sync** – Access your data from anywhere.
 - 📂 **Tags & Filters** – Keep your knowledge sorted and easy to navigate.
 - 🛠 **User-friendly Interface** – Minimal design focused on ease of use.
-
-## 📂 Project Structure
